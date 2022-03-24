@@ -1,4 +1,4 @@
-rootProject.name = "ExampleMixinMod"
+rootProject.name = "DisableReducedDebugInfo"
 
 pluginManagement {
     repositories {

@@ -1,4 +1,4 @@
-id: examplemod
-name: ExampleMod
+id: disable-reduced-debug-info
+name: DisableReducedDebugInfo
 version: 0.0.1
-main: com.example.exampleMod.ExampleMod
+main: xyz.acrylicstyle.disableReducedDebugInfo.Mod

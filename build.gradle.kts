@@ -5,7 +5,7 @@ plugins {
     id("net.blueberrymc.blueberryFarm") version("1.0.4-SNAPSHOT") // https://github.com/BlueberryMC/BlueberryFarm
 }
 
-group = "net.blueberrymc.example"
+group = "xyz.acrylicstyle"
 version = "0.0.1"
 
 tasks.withType<JavaExec>().configureEach {
@@ -37,11 +37,11 @@ dependencies {
 
 tasks {
     withType<net.blueberrymc.blueberryFarm.tasks.RunClient> {
-        this.addArgs("--mixin mixins.examplemod.json")
+        this.addArgs("--mixin mixins.disablereduceddebuginfo.json")
     }
 
     withType<net.blueberrymc.blueberryFarm.tasks.RunServer> {
-        this.addArgs("--mixin mixins.examplemod.json")
+        this.addArgs("--mixin mixins.disablereduceddebuginfo.json")
     }
 
     withType<JavaCompile> {
@@ -51,7 +51,7 @@ tasks {
     withType<Jar> {
         manifest.attributes(
             "TweakClass" to "org.spongepowered.asm.launch.MixinTweaker",
-            "MixinConfigs" to "mixins.examplemod.json",
+            "MixinConfigs" to "mixins.disablereduceddebuginfo.json",
         )
     }
 }

@@ -1,9 +1,9 @@
-package com.example.exampleMod;
+package xyz.acrylicstyle.disableReducedDebugInfo;
 
 import net.blueberrymc.common.bml.BlueberryMod;
 import net.minecraft.server.MinecraftServer;
 
-public class ExampleMod extends BlueberryMod {
+public class Mod extends BlueberryMod {
     @Override
     public void onLoad() {
         MinecraftServer.class.getClassLoader(); // If your setup is working, this line will not show error (do patchVanillaJar if it shows error)
